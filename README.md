@@ -4,7 +4,7 @@
 
 - **Hold down the right arrow key** to speed up YouTube video playback, pressing the right arrow key retains the existing +5 second function.
 
-- Change playback speed 
+- Change playback speed in popup window
 ![](assets/06.png)
 
 ## How to use
