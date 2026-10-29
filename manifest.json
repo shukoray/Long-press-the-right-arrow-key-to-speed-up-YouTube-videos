@@ -1,0 +1,19 @@
+{
+    "manifest_version": 3,
+    "name": "YT video speed up by holding ➔",
+    "version": "1.0.0",
+    "description": "Hold down the right arrow key to speed up YouTube video playback to different speed.",
+    "host_permissions": ["https://*.youtube.com/*"],
+    "permissions": ["storage"],
+
+    "action": {
+        "default_popup": "popup.html"
+    },
+
+    "content_scripts": [
+        {
+        "matches": ["https://*.youtube.com/*"],
+        "js": ["content.js"]
+        }
+    ]
+}

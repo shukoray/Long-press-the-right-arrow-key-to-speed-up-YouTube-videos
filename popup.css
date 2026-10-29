@@ -1,0 +1,14 @@
+body {
+    width: 200px;
+    padding: 15px;
+    font-family: Arial, sans-serif;
+}
+
+h1 {
+    font-size: 18px;
+}
+
+select {
+    width: 100%;
+    padding: 5px;
+}
