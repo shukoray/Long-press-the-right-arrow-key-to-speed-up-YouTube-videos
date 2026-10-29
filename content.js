@@ -5,6 +5,17 @@ let keyDown = false;
 
 const HOLD_DELAY = 300;
 
+function getCurrentVideo() {
+    const videos = document.querySelectorAll("video");
+
+    for (const video of videos) {
+        if (!video.paused && !video.ended) {
+            return video;
+        }
+    }
+
+    return null;
+}
 
 document.addEventListener("keydown", (event) => {
     if (event.key !== "ArrowRight") return;
@@ -16,7 +27,7 @@ document.addEventListener("keydown", (event) => {
     if (keyDown) return;
     keyDown = true;
 
-    const video = document.querySelector("video");
+    const video = getCurrentVideo();
     if (!video) return;
 
     holdTimer = setTimeout(() => {
@@ -39,7 +50,7 @@ document.addEventListener("keyup", (event) => {
     event.stopPropagation();
     event.stopImmediatePropagation();
 
-    const video = document.querySelector("video");
+    const video = getCurrentVideo();
     if (!video) return;
 
     clearTimeout(holdTimer);
