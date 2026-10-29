@@ -8,7 +8,8 @@
 ![](assets/06.png)
 
 ## How to use
-1. Download the extension
+1. Download the extension. Go to Release ➔ click YT-speed-up-extension(.zip) to download
+![](assets/00.png)
 ![](assets/01.png)
 2. Go to Customize and control Google Chrome ➔ Extensions ➔ Manage extensions
 ![](assets/02.png)
